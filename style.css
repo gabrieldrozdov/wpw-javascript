@@ -1,0 +1,9 @@
+/* Make everything transition all CSS values when changed */
+* {
+	transition: all .2s;
+}
+
+/* Give element pointer cursor when hovered over */
+#text500000 {
+	cursor: pointer;
+}

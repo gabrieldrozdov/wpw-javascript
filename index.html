@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Example</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<p class="text1">This is some text!</p>
+
+	<p id="text2">This is more text!</p>
+
+	<p data-id="text3">This is even more text!</p>
+
+	<p id="text4" onmouseover="aNewFunctionThatDoesSomething(this)">Wowowowowowow</p>
+
+	<p id="text500000">one last example plzzzzzzz</p>
+
+	<ul>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+		<li>hahahahaha</li>
+	</ul>
+
+	<!-- ——————————————————————————————————————————————————————————————————————— -->
+	<!-- JAVASCRIPT -->
+	<!-- ——————————————————————————————————————————————————————————————————————— -->
+
+	<!-- You can either have JavaScript in your HTML file using a <script> tag, -->
+	<!-- or, you can write it in a separate file and then reference it with src="" -->
+
+	<script>
+		// This is javascript now!
+
+		// Shortcut to comment or uncomment code:
+		// Mac: COMMAND+/, Windows: CONTROL+/
+
+		// Shortcut to tab in or out code:
+		// Mac: COMMAND+] or COMMAND+[, Windows: CONTROLS+] or CONTROL+[
+
+
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 1: let
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// Create a variable with "let"
+			// Names can’t use hyphens/dashes!
+
+		// UNCOMMENT THE CODE BELOW:
+		// let someVariableName = 1;
+
+
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 2: console.log()
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// View that variable in the console with "console.log"
+			// View the console in your browser with the shortcut COMMAND+OPTION+I (chrome mac)
+
+		// UNCOMMENT THE CODE BELOW:
+		// console.log(someVariableName);
+
+
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 3: redefining variables
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// Redefine a variable with arithmetic (aka math)
+
+		// UNCOMMENT THE CODE BELOW:
+		// someVariableName = someVariableName - 1;
+		// console.log(someVariableName);
+
+
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 4: document.querySelector()
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// Target an HTML element with 'document.querySelector("__")'
+			// Use periods for classes, hashtags for ids
+			// We can also give element a "data" attribute and target that
+
+		// UNCOMMENT THE CODE BELOW:
+		// let someElement = document.querySelector('.text1');
+		// let anotherElement = document.querySelector('#text2');
+		// let aThirdElement = document.querySelector('[data-id="text3"]');
+		// console.log(someElement);
+		// console.log(anotherElement);
+
+
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 5: style.______
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// Change CSS properties with JavaScript
+			// CSS properties are named the same as in CSS, but don't use hyphens
+			// Instead, they capitalize every word except for the first one
+
+		// UNCOMMENT THE CODE BELOW:
+		// someElement.style.fontSize = '100px';
+		// someElement.style.fontFamily = 'sans-serif';
+
+
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 6: Math.random()
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// Math.random() generates a random number 0-1 (not including 1)
+			// If you multiply this by another number, it'll give you a range from 0 to that number
+
+			// EXAMPLE: Math.random()*256 = some number between 0 and 256 (not including 256)
+			// We can combine text with numbers by using the "+" symbol
+
+			// If we want negative numbers too, we can subtract our Math.random() by something
+			// EXAMPLE: Math.random()*180-90 gives us the range -90 to 90
+			// EXAMPLE: Math.random()*-100 gives us the range -100 to 0 (not including -100)
+
+		// UNCOMMENT THE CODE BELOW:
+		// anotherElement.style.color = "rgb(" + (Math.random() * 256) + "," + (Math.random() * 256) + "," + (Math.random() * 256) + ")";
+
+		
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 7: template literals (backtick ` mark)
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// Another way to do this would be with something called "template literals"
+			// These use the ` symbol at the top-left of your keyboard
+			// It's called the backtick mark (`)
+
+		// UNCOMMENT THE CODE BELOW:
+		// someElement.style.color = `rgb(${Math.random() * 256}, ${Math.random() * 256}, ${Math.random() * 256})`;
+
+
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 8: Math.floor()
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// This works for other CSS properties too!
+			// If we want to round our value, we can use Math.floor() to round it down
+
+		// UNCOMMENT THE CODE BELOW:
+		// aThirdElement.style.fontSize = `${Math.floor(Math.random()*300)}px`;
+
+
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 9: function (argument) { stuff }
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// If we want to do this multiple times, we can create a function for it
+
+		// UNCOMMENT THE CODE BELOW:
+		// function resizeTypeOrSomething(elementOfChoice) {
+		// 	elementOfChoice.style.fontSize = `${Math.floor(Math.random()*300)}px`;
+		// }
+		// resizeTypeOrSomething(anotherElement);
+
+
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 10: addEventListener()
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// We can even make this triggerable via a user interation!
+			// To do that, we have to add an event listener to an element
+
+			// NOTE: This WONT work with the following notation
+				// someElement.addEventListener('click', resizeTypeOrSomething(someElement))
+				// This is because the function will happen automatically unless it's wrapped in another function (like in the example below)
+
+		// UNCOMMENT THE CODE BELOW:
+		// someElement.addEventListener('click', function() {
+		// 	resizeTypeOrSomething(someElement);
+		// })
+
+
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 11: inline event listeners
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// We can add event listeners in the HTML directly
+			// Check out the element with id 'text4' in the body of this document (all the way up!)
+			// This uses the mouseover event
+			// The 'this' inside the event listener lets the function run on the same element
+
+		function aNewFunctionThatDoesSomething(blahblahblah) {
+			blahblahblah.style.color = `rgb(${Math.random() * 256}, ${Math.random() * 256}, ${Math.random() * 256})`;
+		}
+
+
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 12: setInterval
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// We can run a function continuously using setInterval
+			// This won't stop unless manually stopped
+			// Google "clearInterval" for information on that
+
+		// UNCOMMENT THE CODE BELOW:
+		// setInterval(function () {
+		// 	aNewFunctionThatDoesSomething(someElement);
+		// }, 500) // run every 500 milliseconds
+
+
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 13: setTimeout and innerText
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// We can delay a function using setTimeout
+			// We can also change the content of a text element with .innerText = 
+
+		// UNCOMMENT THE CODE BELOW:
+		// setTimeout(function () {
+		// 	someElement.innerText = 'beansbeansbeans'
+		// }, 2000) // 2 seconds, 2000 milliseconds
+
+
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 14: innerHTML
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// We can even add HTML to a webpage
+		
+		// UNCOMMENT THE CODE BELOW:
+		// setTimeout(function () {
+		// 	someElement.innerHTML = '<span style="color:red">wowowowowow</span>'
+		// }, 5000) // 5 seconds, 5000 milliseconds
+
+
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 15: arrays and if/then statements
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// We can store a bunch of information in an array
+			// Let's put it all together now!
+
+		let myCoolElement = document.querySelector('#text500000');
+		myCoolElement.addEventListener('click', function() {randomSelection(myCoolElement)})
+		let listOfSomething = ['sans-serif', 'serif', 'cursive', 'monospace', 'fantasy'];
+		let arrayIndex = 0;
+
+		function randomSelection(element) {
+			element.style.fontFamily = listOfSomething[arrayIndex];
+			arrayIndex = arrayIndex + 1;
+
+			if (arrayIndex == listOfSomething.length) { // equivalent to, checking if the numbers are the same
+				arrayIndex = 0; // listOfSomething[0] means the first item in the array
+			}
+		}
+
+
+		// —————————————————————————————————————————————————————————————————————————————————————
+		// LESSON 16: document.querySelectorAll() and for loops
+		// —————————————————————————————————————————————————————————————————————————————————————
+			// We can selection multiple elements with the same class or identifier or tag
+			// This creates an array with all of the elements
+			// "for" loops let you go through an array and do stuff to each element of an array
+
+		// UNCOMMENT THE CODE BELOW:
+		// let listStuff = document.querySelectorAll('li'); // this creates an array
+		// console.log(listStuff);
+		// for (let i=0; i<listStuff.length; i++) {
+		// 	listStuff[i].style.fontSize = Math.random()*200 + 'px';
+		// }
+		
+		
+	</script>
+
+	<!-- This is JavaScript in another file -->
+	<script src="script.js"></script>
+</body>
+</html>
